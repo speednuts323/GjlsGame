@@ -101,6 +101,23 @@
       text-decoration: none;
     }
 
+    ul.episodes {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    ul.episodes li {
+      margin: 8px 0;
+      text-align: center;
+    }
+
+    ul.episodes a button {
+      width: 100%;
+    }
+
     @media (max-width: 600px) {
       .container {
         padding: 10px;
@@ -147,6 +164,67 @@
       <button onclick="cekUmurRispo()">Cek Umur Rispo</button>
       <p class="result" id="umurRispo"></p>
     </div>
+
+    <!-- Daftar Episode Spotify -->
+    <div class="card">
+      <h3>Daftar Episode Spotify</h3>
+      <p>Episode GJLS favorit pribadimu:</p>
+      <ul class="episodes">
+        <li>
+          <a href="https://open.spotify.com/episode/18VtwRF7QsHwKaPE0Udgl5?si=uGgijvBQTROaVFG3sjwUaQ&t=695" target="_blank">
+            <button>Eps. Pohom</button>
+          </a>
+        </li>
+        <li>
+          <a href="https://open.spotify.com/episode/4d9YJbt9HyAp7mAJlYds0G?si=qJJVcggASCy3wQjNZqtgbA">
+            <button>Eps. Rispo ngomong DOP!</button>
+          </a>
+        </li>
+        <li>
+          <a href="https://open.spotify.com/episode/0yg5hWV82lgAyA5z5Ib3aY?si=Ih9SBzt7S0KnFoczS3ZEww" target="_blank">
+            <button>Eps. Lontong bukan sembarang lontong </button>
+          </a>
+        </li>
+            <li>
+          <a href="https://open.spotify.com/episode/7sC5qKavbvixX7KyJ8yfSu?si=DHpR5iUPRN-ngPM_gzXBtg&t=1" target="_blank">
+            <button>Eps. Rispo take me out</button>
+          </a>
+        </li>
+    <li>
+          <a href="https://open.spotify.com/episode/5Cno1PakEB0GIXJ2t9MCxS?si=DBjpf-1HQ72mu5ngKhsAnw" target="_blank">
+            <button>Eps. lu kalo ghosting dari mana kemana? </button>
+          </a>
+        </li>
+    <li>
+          <a href="https://open.spotify.com/episode/5hTn6DweHSvLtfUMyqSD7c" target="_blank">
+            <button>Eps. A. Bo'e
+B. Langi Langi
+C. Dampuyu
+D. Shin Tae-yong </button>
+          </a>
+        </li>
+    <li>
+          <a href="https://open.spotify.com/episode/61RO3IY6KLBcjvbptNNG8w" target="_blank">
+            <button>Eps. ini gue akan berusaha sekeras mungkin, semaksimal mungkin, sesuai apa yang gue bisa...
+
+mohon pengertiannya..... </button>
+          </a>
+        </li>
+    <li>
+          <a href="https://open.spotify.com/episode/1KdAtNioPjtciOXLXgzoT0" target="_blank">
+            <button>Eps. LU NYA GA JUALAANNN!!!!!!
+
+
+GITU AJA DEEEEEEEEEEHHHHHHH!!!!!! </button>
+          </a>
+        </li>
+            <li>
+          <a href="https://t.me/JoinGJLSer" target="_blank">
+            <button>Episode lain nanya sendiri mas, langsung join telegram </button>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 
   <footer>
@@ -157,11 +235,11 @@
     const daerahRandom = [
       "Yunani Kulon", "Kampung Meteor", "Desa Pelangi Gaib",
       "Gunung Nawaweuh", "Lautan Sepipi", "Planet Bekasi Timur",
-      "Lembah Perek", "Bukit Tembem", "Goa Puri"
+      "Lembah Perek", "Bukit Tembem", "Goa Puri", "saburai", "sepatan tapi yang beda"
     ];
 
     const cuacaRandom = [
-      "hujan full cream", "cerah penuh metabolisme", "badai stik jus stroberi",
+      "hujan full cream", "cerah penuh metabolisme", "badai steak jus stroberi",
       "angin LINUK!", "hujan pempek", "kabut cinta",
       "gerimis TikTok ah", "cuaca 2 peka", "panas hati", "hujan sop", "nambah zuppa sup"
     ];
@@ -192,7 +270,7 @@
     }
 
     function cekUmurRispo() {
-      const umur = Math.floor(Math.random() * (87 - 43 + 1)) + 43;
+      const umur = Math.floor(Math.random() * (1 - 43 + 1)) + 43;
       document.getElementById("umurRispo").innerText = `Umur Rispo hari ini: ${umur} tahun`;
     }
   </script>
